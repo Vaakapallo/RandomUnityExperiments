@@ -23,7 +23,6 @@ public class RayScript : MonoBehaviour {
 		lerped = Color.Lerp (lerped, colors [choice], lerpProgress);;
 		if(Physics.Raycast(ray, out hit)) {
 			hit.collider.GetComponent<Renderer>().material.color = lerped;
-
 		}
 
 		if (sameColor(lerped, colors[choice])) {
